@@ -1,0 +1,114 @@
+{
+  "theme": "Light-Futuristic Corporate",
+  "archetype": "4 (Swiss & High-Contrast) with Light-Tech Twist",
+  "colors": {
+    "primary": {
+      "hex": "#0EA5E9",
+      "name": "Bright Blue",
+      "usage": "Primary buttons, active states, main brand highlights"
+    },
+    "secondary": {
+      "hex": "#06B6D4",
+      "name": "Cyan",
+      "usage": "Glow effects, secondary accents, tech-lines, hover states"
+    },
+    "accent": {
+      "hex": "#F97316",
+      "name": "Orange",
+      "usage": "Warnings, selective high-contrast CTA, data chart highlights"
+    },
+    "background": {
+      "hex": "#FFFFFF",
+      "name": "Pure White",
+      "usage": "Main page backgrounds, card backgrounds"
+    },
+    "surface": {
+      "hex": "#F8FAFC",
+      "name": "Off White",
+      "usage": "Secondary section backgrounds, offset areas"
+    },
+    "neutral": {
+      "hex": "#64748B",
+      "name": "Steel Gray",
+      "usage": "Subtitles, borders, inactive states, secondary text"
+    },
+    "text_main": {
+      "hex": "#000000",
+      "name": "Black",
+      "usage": "Main headings, body text for maximum contrast"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "IBM Plex Sans",
+    "font_setup_instructions": "Import 'Outfit' (weights 300, 400, 500, 700) and 'IBM Plex Sans' (weights 300, 400, 500, 600) from Google Fonts in index.css or via your framework font loader.",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl tracking-tight font-bold text-black",
+      "h2": "text-4xl sm:text-5xl tracking-tight font-semibold text-black",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-semibold text-black",
+      "h4": "text-xl sm:text-2xl font-medium text-black",
+      "body": "text-base leading-relaxed text-slate-700",
+      "overline": "text-sm uppercase tracking-[0.2em] font-medium text-cyan-600"
+    }
+  },
+  "visual_effects": {
+    "cursor_spotlight": "Implement a subtle spotlight effect following the cursor using a radial gradient (e.g., radial-gradient(600px at x y, rgba(6, 182, 212, 0.05), transparent 80%)).",
+    "glassmorphism": "Use backdrop-blur-xl bg-white/70 with border border-slate-200/50 for sticky headers and floating panels.",
+    "hover_tilt": "Use framer-motion or vanilla tilt effect for subtle 3D hover effects on portfolio cards.",
+    "shadows": "Use soft ambient shadows (e.g., shadow-[0_8px_30px_rgb(0,0,0,0.04)]) instead of harsh drop shadows.",
+    "borders": "1px solid #E2E8F0 (slate-200) for clean structural grids, occasionally enhanced with cyan hover states."
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous spacing. Use py-24 for main sections, gap-8 to gap-12 for bento grids.",
+    "bento_grid": "For Programs and Portfolio sections, utilize asymmetrical bento box layouts (e.g., mixing col-span-2 and col-span-1 elements).",
+    "dashboard_grid": "For the Finance Dashboard, use a dense grid (gap-6) with crisp edges and minimal padding (p-6) inside cards to maximize data density."
+  },
+  "component_rules": {
+    "buttons": "Rounded edges (rounded-full or rounded-md depending on context), hover state must translate-y-[-2px] with increased shadow. Primary CTA uses bright blue (#0EA5E9) with cyan (#06B6D4) hover.",
+    "cards": "White background, 1px slate-200 border, soft shadow, rounded-2xl for marketing, rounded-lg for dashboard.",
+    "inputs": "Use Shadcn UI inputs with white background, focus ring in bright blue.",
+    "charts": "Use Recharts with custom tooltips. Chart colors: Blue, Cyan, Orange, Slate.",
+    "icons": "Use lucide-react. Stroke width 1.5 for a clean, technical look."
+  },
+  "media": {
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1770520218879-8c9c3fe9f681?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxsaWdodCUyMGN5YW4lMjBhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3NTExNzYxMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract light cyan geometry for hero background with subtle overlay"
+      },
+      "robotics_lab_hero": {
+        "url": "https://images.pexels.com/photos/8439002/pexels-photo-8439002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Modern white robotics lab with robotic arm and technicians"
+      },
+      "quadruped_robot": {
+        "url": "https://images.pexels.com/photos/32998808/pexels-photo-32998808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "High-tech robotic dog on a tiled surface"
+      },
+      "arduino_systems": {
+        "url": "https://images.pexels.com/photos/35673128/pexels-photo-35673128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Arduino circuit electronics close up"
+      },
+      "robotic_arm_tech": {
+        "url": "https://images.pexels.com/photos/8438967/pexels-photo-8438967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Sleek industrial robot arm in a laboratory setting"
+      },
+      "university_campus": {
+        "url": "https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Modern university campus building for partnerships section"
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text on light backgrounds maintains a minimum 4.5:1 contrast ratio. Use black or slate-800 for body text.",
+    "focus": "All interactive elements must have visible focus states (ring-2 ring-cyan-500).",
+    "motion": "Respect prefers-reduced-motion for parallax and floating animations."
+  },
+  "instructions_to_main_agent": [
+    "Build out the hero section with a cursor spotlight effect using a radial gradient that tracks the mouse pointer.",
+    "Implement the strategic finance dashboard using Recharts for data visualization, ensuring Indian number formatting (lakhs/crores) is applied to financial data.",
+    "Design the portfolio section with pseudo-3D tilt cards (e.g., using framer-motion) that react to hover.",
+    "The admin edit mode should wrap editable sections with a subtle dashed border and 'Edit' button overlay when authenticated as Team Robokoshal.",
+    "Apply a light-futuristic aesthetic. Avoid heavy use of dark mode; rely on white space, steel gray borders, and vibrant cyan/blue accents to create a premium tech feel.",
+    "For the robotics lab setup planner, build an interactive calculator with category-based item selection."
+  ]
+}

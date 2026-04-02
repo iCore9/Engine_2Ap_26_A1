@@ -1,0 +1,69 @@
+/* Global reset for App */
+.App {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Circuit board SVG pattern */
+.circuit-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%230EA5E9' stroke-width='0.3' opacity='0.15'%3E%3Cpath d='M10 10 L30 10 L30 30 M50 10 L70 10 L70 30 M90 10 L90 30'/%3E%3Cpath d='M10 50 L30 50 M70 50 L90 50'/%3E%3Cpath d='M10 90 L30 90 L30 70 M50 90 L70 90 L70 70 M90 90 L90 70'/%3E%3Ccircle cx='10' cy='10' r='2' fill='%230EA5E9' opacity='0.3'/%3E%3Ccircle cx='50' cy='10' r='2' fill='%2306B6D4' opacity='0.3'/%3E%3Ccircle cx='90' cy='10' r='2' fill='%230EA5E9' opacity='0.3'/%3E%3Ccircle cx='30' cy='50' r='2' fill='%2306B6D4' opacity='0.3'/%3E%3Ccircle cx='70' cy='50' r='2' fill='%230EA5E9' opacity='0.3'/%3E%3Ccircle cx='10' cy='90' r='2' fill='%2306B6D4' opacity='0.3'/%3E%3Ccircle cx='50' cy='90' r='2' fill='%230EA5E9' opacity='0.3'/%3E%3Ccircle cx='90' cy='90' r='2' fill='%2306B6D4' opacity='0.3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Orange accent text */
+.text-brand-orange { color: #F97316; }
+.text-brand-blue { color: #0EA5E9; }
+.text-brand-cyan { color: #06B6D4; }
+.bg-brand-blue { background-color: #0EA5E9; }
+.bg-brand-cyan { background-color: #06B6D4; }
+.bg-brand-orange { background-color: #F97316; }
+
+/* Button primary */
+.btn-primary {
+  background: linear-gradient(135deg, #0EA5E9, #06B6D4);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0EA5E9, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Admin mode indicator */
+.admin-mode-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: linear-gradient(135deg, #0EA5E9, #06B6D4);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+}
